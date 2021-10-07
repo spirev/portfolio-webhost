@@ -65,12 +65,10 @@ p {
     font-size: 13em;
 }
 
-#toggle {
-    display: flex;
-    width: 60px;
-    height: 30px;
-    border-radius: 160px;
-    background-color: black;
+.fa-bars:hover {
+    cursor: pointer;
+    color:rgb(161, 182, 252);
+    transition: 0.2s;
 }
 
 /* tablet */
