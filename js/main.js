@@ -55,7 +55,7 @@ $(document).ready(function(){
 
 				$('#menu').toggleClass('fade-out');
 				$('#menu').toggleClass('menu-off');
-			}, 600);
+			}, 400);
 			
 		}
 		else {
@@ -70,7 +70,7 @@ $(document).ready(function(){
 				// make main content appear and  disappear
 				$('.content').toggleClass('fade-out');
 				$('.content').toggleClass('fade-in');
-			}, 600);
+			}, 400);
 		}
 	})
 

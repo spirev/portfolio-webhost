@@ -108,19 +108,13 @@ ul li:hover {
 
 .fade-in {
     animation-name: fade-in;
-    animation-duration: 1s;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
 }
 
 .fade-out {
     animation-name: fade-out;
     animation-duration: 0.4s;
-    animation-fill-mode: forwards;
-}
-
-.disapear {
-    animation-name: disapear;
-    animation-duration: 0.6s;
     animation-fill-mode: forwards;
 }
 
@@ -266,6 +260,7 @@ ul li:hover {
 
     .menu-on {
         font-size: 20em;
+        margin-top: 6%;
     }
 
 }
