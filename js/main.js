@@ -1,43 +1,13 @@
 
-$(document).ready(function(){
-	// let is_toggled = false;
-	// if (is_toggled == false) {
-	// 	$('#toggle').click(function(){
-	// 		// hamburger animation (line to cross)
-	// 		$(this).toggleClass('open');
-	
-	// 		// trigger fade-out animation for main content (not h1 and picture)
-	// 		$("main").children().toggleClass('disapear');
-	
-	// 		// make h1 and pic fade out but not display none
-	// 		$("h1").toggleClass('fade-out');
-	// 		$("header img").toggleClass('fade-out');
-			
-			
-	// 		setTimeout(function() {
-	
-	// 			// after fading out main content disapear for good
-	// 			$("main").children().css("display", "none");
-	
-	// 			// menu animation get in (choice menu)
-	// 			$(".menu").toggleClass("menu-on");
-	// 		}, 290);
-	// 	})
-	// }
-	// else {
-	// 	$(".menu").toggleClass("menu-on");
-	// 	$(".menu").toggleClass("disapear");
-		
-	// 	setTimeout(function() {
-	// 		$(".menu").toggleClass("menu");
-	// 		$("main").children().toggleClass("fade-in");
-	// 		$("h1").toggleClass("fade-in");
-	// 		$("header img").toggleClass("fade-in");
-	// 	}, 290);
-	// }
+$(document).ready(function () {
 
-	$('#toggle').click(function() {
-		
+	$("main").toggleClass('hide');
+	$("main").toggleClass('display');
+	$("main").toggleClass('long-fade-in');
+
+	// menu and content animation
+	$('#toggle').click(function () {
+
 		// make hamburger menu go from line to crosses
 		$(this).toggleClass('open');
 
@@ -46,9 +16,9 @@ $(document).ready(function(){
 			// make main content fade-out
 			$('.content').toggleClass('fade-out');
 			$('.content').toggleClass('fade-in');
-	
+
 			// after main content fade-out animation
-			setTimeout(function() {
+			setTimeout(function () {
 				// make menu fade-in
 				$('#menu').toggleClass('fade-in');
 				$('#menu').toggleClass('menu-on');
@@ -56,14 +26,14 @@ $(document).ready(function(){
 				$('#menu').toggleClass('fade-out');
 				$('#menu').toggleClass('menu-off');
 			}, 400);
-			
+
 		}
 		else {
 			// make menu fade-out
 			$('#menu').toggleClass('fade-in');
 			$('#menu').toggleClass('fade-out');
-			
-			setTimeout(function() {
+
+			setTimeout(function () {
 				// make menu content disappear
 				$('#menu').toggleClass('menu-on');
 				$('#menu').toggleClass('menu-off');
@@ -74,5 +44,32 @@ $(document).ready(function(){
 		}
 	})
 
+	// name animation
+	let name = $('h1');
+	let plain_name = "VINCENT SPIRE";
+	let loading_name = "";
+	let char_iteration = 0;
+	$("h1 span").text('\\');
 
+	// make backslash flash
+	setInterval(() => {
+			$('h1 span').toggleClass('display');
+			$('h1 span').toggleClass('hide');
+	}, 600);
+
+	// wait 1.5 seconde to display name
+	setTimeout(() => {
+
+		// display one lettre every 0.11 seconde
+		let firstname_interval = setInterval(() => {
+			loading_name += plain_name.charAt(char_iteration);
+			name.text(loading_name + "\\");
+			if (char_iteration >= plain_name.length) {
+				name.text(name.text().substr(0, 13));
+				name.append("<span>\\</span>");
+				clearInterval(firstname_interval);
+			}
+			char_iteration++;
+		}, 110);
+	}, 1800);
 });

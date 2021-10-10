@@ -75,6 +75,18 @@ p {
     line-height: 30px;
 }
 
+h1 span {
+    font-size: 1em;
+}
+
+.display {
+    visibility: visible;
+}
+
+.hide {
+    visibility: hidden;
+}
+
 .menu-off {
     display: none;
 }
@@ -104,6 +116,12 @@ ul {
 ul li:hover {
     color: rgb(0, 255, 255);
     cursor: pointer;
+}
+
+.long-fade-in {
+    animation-name: fade-in;
+    animation-duration: 2.4s;
+    animation-fill-mode: forwards;
 }
 
 .fade-in {
