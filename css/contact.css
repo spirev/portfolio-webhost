@@ -1,0 +1,54 @@
+main {
+    min-height: 600px;
+    margin-top: 140px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+main ul {
+    margin-top: 0;
+    padding-left: 25px;
+    word-wrap: break-word;
+}
+
+main ul li {
+    word-wrap: break-word;
+    font-size: 8em;
+}
+
+main ul li:hover {
+    color: rgb(220, 228, 255);
+    cursor:default;
+}
+
+main ul li:nth-child(3) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main ul li:nth-child(3) a  {
+    font-size: 0.7em;
+}
+
+/* main ul li:nth-child(3) a:hover  {
+    cursor: ;
+    color: rgb(0, 255, 255);
+} */
+
+
+main ul li i {
+    font-size: 1.5em;
+    margin-right: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        margin-top: 180px;
+    }
+
+    main ul li{
+        font-size: 10em;
+    }
+}
