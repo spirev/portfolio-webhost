@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Titillium Web', monospace;
     color: rgb(220, 228, 255);
 }
 
@@ -214,6 +214,22 @@ a:hover {
     top: 12px;
     width: 0%;
     left: 50%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgb(70, 70, 70); 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(121, 121, 121); 
   }
 
 

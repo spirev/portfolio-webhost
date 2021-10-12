@@ -52,8 +52,9 @@ h3 {
 
 p {
     padding: 5%;
-    font-size: 12px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 35px;
+    word-spacing: 7px;
 }
 
 q {
@@ -139,7 +140,7 @@ h1 span {
     }
 
     main section {
-        margin-bottom: 10%;
+        margin-bottom: 12%;
     }
     
 }
@@ -167,7 +168,7 @@ h1 span {
 
 @media screen and (min-width: 1084px){
     main img {
-        width: 66%;
+        width: 71%;
     }
 }
 
@@ -222,7 +223,7 @@ h1 span {
     }
 
     main section {
-        margin-bottom: 8%;
+        margin-bottom: 9%;
     }
 
     p{
@@ -232,7 +233,7 @@ h1 span {
 
 @media screen and (min-width: 1400px) {
     main img {
-        width: 46%;
+        width: 49%;
     }
 }
 

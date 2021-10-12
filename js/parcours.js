@@ -1,6 +1,8 @@
 
 $(document).ready(function () {
 
+	$('main').toggleClass('hide');
+
 	// name animation
 	let name = $('h1');
 	let plain_name = "VINCENT SPIRE";
