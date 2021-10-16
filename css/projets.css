@@ -16,6 +16,10 @@ ul {
     margin-top: 20px;
 }
 
+#projects img {
+    width: 100%;
+}
+
 #stack {
     border: 1px solid rgb(0, 255, 255);
     border-radius: 10px;
@@ -69,6 +73,23 @@ ul {
 
 #projects h1 {
     font-size: 15em;
+    margin-top: 135px;
+}
+
+#projects p {
+    font-size: 10em;
+}
+
+#projects img {
+    margin-bottom: 20px;
+}
+
+#projects hr {
+    width: 90%;
+    height: 1px;
+    background-color: rgb(0, 255, 255);
+    border: 0;
+    margin: 60px 0px 60px 0px;
 }
 
 @media screen and (min-width: 425px) {
@@ -79,6 +100,20 @@ ul {
     #stack img {
         width: 60px;
         height: 60px;
+    }
+
+    #projects p {
+        font-size: 11em;
+        line-height: 2em;
+        word-spacing: 4px;
+    }
+
+    #projects img {
+        margin-bottom: 65px;
+    }
+
+    #projects hr {
+        margin: 100px 0px 100px 0px;
     }
 }
 
@@ -102,6 +137,14 @@ ul {
     #stack img {
         width: 65px;
         height: 65px;
+    }
+
+    #projects p {
+        font-size: 13em;
+    }
+
+    #projects hr {
+        margin: 150px 0px 150px 0px;
     }
 }
 
@@ -132,5 +175,9 @@ ul {
 
     #stack .tools {
         width: 50%;
+    }
+
+    #projects {
+        width: 80%;
     }
 }

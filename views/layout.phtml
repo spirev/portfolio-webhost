@@ -40,7 +40,7 @@
             </div>
             <?php if($view === "parcours"): ?>
                 <h1 class="fade-in content"><span class="display"></span></h1>
-                <q class="content">Développeur Intégrateur Web</q>
+                <q class="content fade-in">Développeur Intégrateur Web</q>
                 <img class="fade-in content" src="images/119210662_2629684977269470_2346559317229668440_n.jpg" alt="photo vincent spire">
             <?php endif; ?> 
         </header>
@@ -49,6 +49,9 @@
         </main>
         <?php if($view !== 'contact'): ?>
             <script src="js/<?= $view ?>.js"></script>
+        <?php endif; ?>
+        <?php if ($view === 'projets'): ?>
+            <script src="js/projects.js"></script>
         <?php endif; ?>
         <script src="js/p-menu.js"></script>
     </body>

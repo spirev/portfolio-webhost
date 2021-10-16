@@ -54,7 +54,7 @@ p {
     padding: 5%;
     font-size: 15px;
     line-height: 35px;
-    word-spacing: 7px;
+    word-spacing: 3px;
 }
 
 q {
@@ -88,6 +88,7 @@ h1 span {
 
     p {
         font-size: 16px;
+        word-spacing: 5px;
     }
 
     q {
@@ -129,6 +130,7 @@ h1 span {
 
     p {
         font-size: 20px;
+        word-spacing: 6px;
     }
 
     q {
@@ -163,6 +165,10 @@ h1 span {
     
     main article:nth-child(2) {
         width: 80%;
+    }
+
+    p {
+        word-spacing: 7px;
     }
 }
 
