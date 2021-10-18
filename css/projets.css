@@ -87,6 +87,7 @@ ul {
 
 #projects img {
     width: 100%;
+    object-fit: cover;
     margin-bottom: 20px;
 }
 
@@ -116,6 +117,7 @@ ul {
 
     #projects img {
         margin-bottom: 65px;
+        height: 170px; 
     }
 
     #projects a {
@@ -124,6 +126,25 @@ ul {
 
     #projects hr {
         margin: 100px 0px 100px 0px;
+    }
+
+    .project-fade {
+        animation-name: project-fade;
+        animation-duration: 0.7s;
+    }
+
+    @keyframes project-fade {
+        0% {
+            opacity: 1;
+        }
+    
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 }
 
@@ -156,6 +177,10 @@ ul {
     #projects hr {
         margin: 150px 0px 150px 0px;
     }
+
+    #projects img {
+        height: 270px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -175,6 +200,18 @@ ul {
     #stack .os {
         width: 70%;
     }
+
+    #projects img {
+        height: 290px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    #projects img {
+        height: 340px;
+    }
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -197,5 +234,9 @@ ul {
 
     #projects a {
         font-size: 22em;
+    }
+
+    #projects img {
+        height: 550px;
     }
 }
